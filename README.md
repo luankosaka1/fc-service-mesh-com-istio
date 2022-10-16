@@ -34,7 +34,7 @@ No mundo distribuído temos diversos microserviços que se comunicam e são depe
 ### Por que preciso de um Service Mesh? Istio?
 
 - Gerenciamento de tráfego
--- Gateways (i/o)
+-- Gateways (entrada: ingress traffic e saída: egress traffic)
 -- Load Balacing
 -- Timeout
 -- Políticas de retry
@@ -48,3 +48,19 @@ No mundo distribuído temos diversos microserviços que se comunicam e são depe
 -- Man-in-the-middle (interceptar a comunicação e capturar dados sensíveis)
 -- mTLS
 -- AAA (authentication, authorization e audit)
+
+## Arquitetura do Istio
+
+### Dinâmica && Sidecar Proxy
+
+![Sidecar-proxy](https://github.com/luankosaka1/fullcycle-service-mesh-com-istio/blob/main/images/sidecar-proxy.png)
+
+### Arquitetura
+
+![Arquitetura](https://github.com/luankosaka1/fullcycle-service-mesh-com-istio/blob/main/images/arquitetura.png)
+
+### Istiod
+
+- Pilot: Controla as configurações
+- Citadel: Controla a autenticação e  identidade
+- Gallery: Faz a tradução do que vc esta fazendo a configuração na linguagem do istio (istio é utilizado em outras plataformas)
