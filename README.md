@@ -14,7 +14,7 @@ No mundo distribuído temos diversos microserviços que se comunicam e são depe
 
 ![O mundo distribuído](https://github.com/luankosaka1/fullcycle-service-mesh-com-istio/blob/main/images/o-mundo-distribuido.png)
 
-## Service Mesh vs Isti
+## Service Mesh vs Istio
 
 ### Service Mesh
 
@@ -28,3 +28,23 @@ No mundo distribuído temos diversos microserviços que se comunicam e são depe
 - Apache MESOS
 - Consul
 - HashiCorp Noad
+
+## Principais Recursos
+
+### Por que preciso de um Service Mesh? Istio?
+
+- Gerenciamento de tráfego
+-- Gateways (i/o)
+-- Load Balacing
+-- Timeout
+-- Políticas de retry
+-- Circuit Breaker(quantas requisições pode suportar)
+-- Fault Injection (simular o comportamento do sistema)
+- Observabilidade
+-- Métricas
+-- Traces distribuídos
+-- Logs
+- Segurança
+-- Man-in-the-middle (interceptar a comunicação e capturar dados sensíveis)
+-- mTLS
+-- AAA (authentication, authorization e audit)
