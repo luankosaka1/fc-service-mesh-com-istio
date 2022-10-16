@@ -12,4 +12,4 @@ Istio, permite rodar em cima do Kubernetes
 
 No mundo distribuído temos diversos microserviços que se comunicam e são dependentes uma das outras, com isso precisamos garantir que todos estejam saudáveis para que não comprometa a comunicação.
 
-[O mundo distribuído](./images/o-mundo-distribuido.png)
+![O mundo distribuído](https://github.com/luankosaka1/fullcycle-service-mesh-com-istio/blob/main/images/o-mundo-distribuido.png)
